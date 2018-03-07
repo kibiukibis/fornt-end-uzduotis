@@ -12,6 +12,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    position: relative;
 }
 
 .header__logo {
@@ -21,6 +22,28 @@
     display: inline-block;
 	line-height: 8rem;
 }
+
+.navigation__top {
+	position: absolute;
+	top: 1rem;
+	right: 0;
+	
+}
+
+.top__item {
+	display: inline-block;
+	
+	&:not(:last-child) {
+		padding-right: 1rem;
+	}
+	a {
+			color: $color-black;
+			font-size: 1.4rem;
+			font-weight: 700;
+
+	}
+}
+
 
 
 
@@ -72,7 +95,7 @@
     &:hover .navigation__dropdown {
     	display: block;
 	}
-	@include respon(tab-port) {
+	@include respond(tab-port) {
 		display: none;
 	}
 }
@@ -108,7 +131,7 @@
 	background-color: $color-grey-dark;
 	padding: 0.8rem 0.7rem;
 	line-height: 1.2rem;
-	font-size: $fsz;
+	font-size: 1.2rem;
 	cursor: pointer;
 
 	&:hover {
