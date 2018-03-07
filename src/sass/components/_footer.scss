@@ -1,0 +1,63 @@
+.footer {
+    background-color: $color-grey-medium;
+    padding: 1.3rem 0;
+
+
+    .footer__container {
+        // height: 11.7rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        @include respond(phone) {
+        	align-items: center;
+        }
+    }
+    .footer__text {
+        width: 85%;
+        line-height: 1.5rem;
+        padding: 1.2rem 0;
+        font-size: 1.2rem;
+        color: $color-text-grey-light; 
+      @include respond(tab-port) {
+      	width: 80%;
+      }
+       @include respond(phone) {
+       	display: none;
+      }
+    }
+
+    .footer__logo {
+        width: 12.1rem;
+        font-size: 3.1rem;
+        color: rgba($color-white, .8);
+        font-weight: 700;
+        display: inline-block;
+        line-height: 8rem;
+        flex: 0 1 auto;
+    }
+
+    .footer__navigation {
+        width: 100%;
+         @include respond(phone) {
+        	width: 60%;
+        }
+    }
+
+
+    .navigation__item {
+        line-height: 1.1rem;
+        color: rgba($color-white, .8);
+        display: inline-block;
+        font-size: 1.2rem;
+        padding: 0 0.8rem;
+
+        &:not(:last-child) {
+            border-right: 2px solid rgba($color-white, .8);
+        }
+        &:first-child {
+            padding-left: 0;
+        }
+        
+
+    }
+}

@@ -1,0 +1,106 @@
+.main {
+    background-color: $color-main;
+    padding: 4.1rem 0 0.4rem 0;
+}
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+// LEFT SIDE OF MAIN
+.left {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    width: 70%;
+    @include respond(tab-port) {
+        width: 63%;
+    }
+     @include respond(phone) {
+        width: 100%;
+    }
+}
+
+.article {
+    background-color: $color-white;
+    width: 100%;
+    padding: 0rem 2.3rem 1.8rem;
+    margin-bottom: 2.5rem;
+}
+
+
+.comment {
+    background-color: $color-white;
+    width: 48.4%;
+    @include respond(tab-port) {
+        width: 100%;
+        margin-bottom: 2.2rem;
+    }
+}
+
+.comment__text {
+    padding: 2rem 2.4rem;
+}
+
+.resource {
+    background-color: $color-white;
+    width: 48.2%;
+    padding: 1.1rem 2.2rem;
+     @include respond(tab-port) {
+        width: 100%;
+    }
+}
+
+.resource__item {
+    line-height: 3rem;
+    border-bottom: .5px solid $color-grey-light;
+    color: $color-blue;
+}
+
+
+// RIGHT SIDE OF MAIN
+.right {
+    width: 30%;
+    padding-left: 2.3rem;
+    @include respond(tab-port) {
+        width: 36%;
+    }
+     @include respond(phone) {
+        width: 100%;
+        padding: 2.3rem;
+    }
+}
+
+.right__header {
+    line-height: 2.5rem;
+    border-bottom: 3px solid $color-black;
+    padding-bottom: 1.3rem;
+}
+
+
+.right__text {
+    padding: 1.3rem 0 2.9rem;
+}
+
+
+
+.bottom {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 2.2rem 0;
+    background-color: $color-grey-light;
+    padding: 2rem;
+}
+
+.bottom__wrapper {
+    width: 31.5%;
+    display: inline-block;
+    padding-bottom: 0;
+     @include respond(phone) {
+        width: 100%;
+        margin-bottom: 2.2rem;
+    }
+}
