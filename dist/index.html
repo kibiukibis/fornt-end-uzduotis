@@ -14,14 +14,15 @@
 <body>
     <header class="header">
         <div class="header__container container">
+                <nav class="header__top">
+                        <ul>
+                          <li class="top__item"><a href="#" class="top__link">menu link</a></li>
+                          <li class="top__item"><a href="#" class="top__link">menu link</a></li>
+                          <li class="top__item"><a href="#" class="top__link">menu link</a></li>
+                        </ul>
+                      </nav>
             <div class="header__logo">The Site</div>
-            <nav class="navigation__top">
-              <ul>
-                <li class="top__item"><a href="#" class="top__link">menu link</a></li>
-                <li class="top__item"><a href="#" class="top__link">menu link</a></li>
-                <li class="top__item"><a href="#" class="top__link">menu link</a></li>
-              </ul>
-            </nav>
+            
             
             <nav class="navigation header__navigation">
                 <div class="header__nav-icon">
@@ -30,16 +31,6 @@
                     <div class="nav-icon__line"></div>
                   </div>
                 <ul class="navigation__block">
-                    <li class="navigation__item">
-                        <a href="#" class="navigation__link">menu link</a>
-                        <ul class="navigation__dropdown">
-                            <li class="dropdown__item"><a href="#" class="dropdown__link">Integer eget mauris</a></li>
-                            <li class="dropdown__item"><a href="#" class="dropdown__link">Pulvinar consectetur</a></li>
-                            <li class="dropdown__item"><a href="#" class="dropdown__link">Oget mauris praesent</a></li>
-                            <li class="dropdown__item"><a href="#" class="dropdown__link">Interdum justo</a></li>
-                            <li class="dropdown__item"><a href="#" class="dropdown__link">Nec neque fringilla</a></li>
-                        </ul>
-                    </li>
                     <li class="navigation__item">
                         <a href="#" class="navigation__link">menu link</a>
                         <ul class="navigation__dropdown">
@@ -112,17 +103,17 @@
                 <p class="right__text">Integer eget mauris et urna pulvinar consectetur hendrerit eget mauris. Praesent a interdum justo. Aenean ac diam nec neque fringilla cursus. Donec iaculis tortor in nunc vehicula rutrum. Integer malesuada mollis ligula at varius.</p>
                 <form class="form" action="#" name="myForm" onsubmit="return(validate());">
                     <div class="form__block">
-                    <h4 class="form__header">First name:</h4>
+                    <label for="firstname" class="form__header">First name:</label>
                     <input class="form__field form__field--small" type="text" name="firstname" id="firstname" placeholder="Enter your name">
                     <span class="error error__firstname"></span>
                     </div>
                     <div class="form__block">
-                    <h4 class="form__header">Last name:</h4>
+                    <label for="lastname" class="form__header">Last name:</label>
                     <input class="form__field form__field--small" type="text" name="lastname" id="lastname" placeholder="Enter your last name">
                     <span class="error error__lastname"></span>
                     </div>
-                    <h4 class="form__header">Message:</h4>
-                    <input class="form__field form__field--large" type="text" name="message" id="message">
+                    <label for="message" class="form__header">Message:</label>
+                    <textarea class="form__field form__field--large" name="message"></textarea>
                     <input class="form__submit" type="submit" value="Submit">
                 </form>
             </aside>
@@ -137,12 +128,11 @@
         <div class="footer__container container">
             <nav class="footer__navigation">
                 <ul class="navigation__block">
-                    <li class="navigation__item">menu link</li>
-                    <li class="navigation__item">menu link</li>
-                    <li class="navigation__item">menu link</li>
-                    <li class="navigation__item">menu link</li>
-                    <li class="navigation__item">menu link</li>
-                    <li class="navigation__item">menu link</li>
+                    <li class="navigation__item"><a href="#">menu link</a></li>
+                    <li class="navigation__item"><a href="#">menu link</a></li>
+                    <li class="navigation__item"><a href="#">menu link</a></li>
+                    <li class="navigation__item"><a href="#">menu link</a></li>
+                    <li class="navigation__item"><a href="#">menu link</a></li>
                 </ul>
             </nav>
             <p class="footer__text">

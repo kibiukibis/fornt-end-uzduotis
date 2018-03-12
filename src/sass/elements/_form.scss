@@ -1,48 +1,40 @@
 .form {
     border: .5px solid $color-grey-dark;
     padding: 1.5rem 1.7rem;
+    &__field {
+        display: inline-block;
+        width: 100%;
+        background-color: $color-white;
+        margin-bottom: 1.7rem;
+        padding: 1.2rem;
+        border: .5px solid $color-grey-dark;
+    }
+    &__field--small {
+        height: 3.1rem;
+    }
+    &__field--large {
+        height: 13.3rem;
+    }
+    &__submit {
+        display: inline-block;
+        background-color: $color-header;
+        width: 11rem;
+        height: 3.8rem;
+        color: rgba($color-white, .8);
+        text-transform: uppercase;
+        letter-spacing: 2.1px;
+        text-align: center;
+    }
+    &__block {
+        position: relative;
+    }
+    .error {
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 100%;
+        padding: 0;
+        font-size: 1.4rem;
+        color: $color-header;
+    }
 }
-
-.form__field {
-    display: inline-block;
-    width: 100%;
-    background-color: $color-white;
-    margin-bottom: 1.7rem;
-    padding-left: 1.2rem;
-    border: .5px solid $color-grey-dark;
-}
-
-.form__field--small {
-    height: 3.1rem;
-}
-
-.form__field--large {
-    height: 13.3rem;
-}
-
-.form__submit {
-    display: inline-block;
-    background-color: $color-header;
-    width: 11rem;
-    height: 3.8rem;
-    color: rgba($color-white, .8);
-    text-transform: uppercase;
-    letter-spacing: 2.1px;
-    text-align: center;
-}
- .form__block {
-     position: relative;
- }
-.error {
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 100%;
-    padding: 0;
-    font-size: 1.4rem;
-    color: $color-header;
-  }
-  
-  .error.active {
-    padding: 0.3em;
-  }

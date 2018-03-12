@@ -3,9 +3,7 @@
 	margin: 0 auto;
 
 	@include respond(tab-land) {
-		width: 95%;
+		padding: 0 2rem;
 	}
-	@include respond(tab-port) {
-		width: 97%;
-	}
+	
 }
